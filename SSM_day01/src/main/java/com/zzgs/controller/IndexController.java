@@ -37,7 +37,8 @@ public class IndexController {
         List<Blog> blogs = blogService.findAll(page,size);
         PageInfo pageinfo = new PageInfo(blogs);
         model.addObject("pageInfo",pageinfo);
-//        model.setViewName("index");
+        model.setViewName("index");
         return model;
     }
+
 }
